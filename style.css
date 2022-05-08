@@ -24,7 +24,7 @@
 
 html,
 body {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -278,6 +278,7 @@ nav .close-menu {
   background-color: white;
   padding: 2.4rem;
   border-radius: 0.6rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 #services .cards .card h2,
@@ -294,14 +295,19 @@ nav .close-menu {
   background-color: white;
 }
 
+#depositions .wrapper {
+  display: block;
+}
+
 #depositions .deposition {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   background-color: var(--background-primary-color);
-  padding: 3.2rem;
+  padding: 2rem;
   margin-block: 6rem 3rem;
-  border-radius: 0.4rem;
+  border-radius: 0.6rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 #depositions .deposition p {
@@ -313,6 +319,23 @@ nav .close-menu {
   justify-content: flex-start;
   align-items: center;
   gap: 1.6rem;
+}
+
+#depositions .deposition .info img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fractio {
+  bottom: -0.5rem;
+}
+
+#depositions .swiper-pagination-bullet-active {
+  background-color: var(--secundary-color);
 }
 
 /*===ABOUT=============================================*/
@@ -336,6 +359,7 @@ nav .close-menu {
   background-color: white;
   padding-block: 4rem;
   border-radius: 0 0 1rem 1rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 #about .stats .stat p {
@@ -585,6 +609,10 @@ footer .social-links {
     width: 30rem;
     text-align: center;
     margin-inline: auto;
+  }
+
+  #depositions .content {
+    margin-right: 2.4rem;
   }
 
   /*===ABOUT=============================================*/
